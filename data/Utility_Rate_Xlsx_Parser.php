@@ -7,6 +7,9 @@ $xlsx = SimpleXLSX::parse($file);
 $json = encodeXlsx(prepareData($xlsx));
 
 function checkXlsx($xlsx) {
+	/**
+	 * @todo refactor this to encode json if no errors
+	 */
 	if ( $xlsx ) {
 		echo '<pre>';
 		print_r( $xlsx->rows() );
