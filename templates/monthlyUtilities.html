@@ -1,0 +1,32 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 text-center">
+			<h3>What is your average monthly utility bill?</h3>
+			<form id="solar_quote_basic_1" class="txt-center solar-quote-basic" action="" onsubmit="event.preventDefault(); view.renderNextTemplate('utilityProviders')">
+				<input type="hidden" name="_token" value="JrMMAss3KjppMl8i6ahJs91wVqyZORPb1AybEsqj">
+				<div class="form-group ">
+					<input type="hidden" name="calculator" value="solar_quote">
+					<label for="solar_quote_basic_1_utility_cost" class="hidden">Average Monthly Utility Cost</label>
+					<div class="bg-grey pad3030 min-250">
+						<h3 id="solar_quote_basic_1_utility_cost_label" class="h1 range-result txt-info">150</h3>
+						<div class="range-container">
+							
+							<input type="range" 
+										 name="utility_cost" 
+										 id="solar_quote_basic_1_utility_cost" 
+										 class="form-control input-lg" 
+										 min="50" 
+										 max="650" 
+										 step="10" 
+										 value="150" 
+										 oninput="monthlyUtils.showValue(this.value)" 
+										 onchange="monthlyUtils.showValue(this.value)">
+						</div>
+					</div>
+					<span class="text-danger"></span>
+				</div>
+				<button type="submit" data-loading-text="Loading..." onclick="$(this).button('loading')" class="btn btn-primary btn-lg">Continue <i class="glyphicon glyphicon-chevron-right"></i></button>
+			</form>
+		</div>
+	</div>
+</div>

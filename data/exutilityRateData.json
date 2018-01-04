@@ -1,0 +1,365 @@
+[
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "Pacific Gas & Electric Co",
+		"lseId": "734",
+		"masterTariffId": "522",
+		"serviceCharge": "0",
+		"serviceRate": "0.23907418999999999",
+		"stateAbbrev": "CA"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "Sacramento Municipal Util Dist",
+		"lseId": "1055",
+		"masterTariffId": "467",
+		"serviceCharge": "20",
+		"serviceRate": "0.11469",
+		"stateAbbrev": "CA"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "Roseville Electric",
+		"lseId": "1027",
+		"masterTariffId": "3154197",
+		"serviceCharge": "26",
+		"serviceRate": "0.12543771000000001",
+		"stateAbbrev": "CA"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "Southern California Edison Co",
+		"lseId": "1228",
+		"masterTariffId": "447",
+		"serviceCharge": "0.93",
+		"serviceRate": "0.21068812000000001",
+		"stateAbbrev": "CA"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "Los Angeles Department of Water & Power",
+		"lseId": "210",
+		"masterTariffId": "502",
+		"serviceCharge": "1.3",
+		"serviceRate": "0.17468075",
+		"stateAbbrev": "CA"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "San Diego Gas & Electric Co",
+		"lseId": "1071",
+		"masterTariffId": "486",
+		"serviceCharge": "0.32900000000000001",
+		"serviceRate": "0.3001182",
+		"stateAbbrev": "CA"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "Xcel Energy - Colorado",
+		"lseId": "913",
+		"masterTariffId": "599",
+		"serviceCharge": "8.7899999999999991",
+		"serviceRate": "9.9805124752667299E-2",
+		"stateAbbrev": "CO"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "Fort Collins Utilities",
+		"lseId": "2668",
+		"masterTariffId": "81136",
+		"serviceCharge": "6.14",
+		"serviceRate": "9.7375444791464594E-2",
+		"stateAbbrev": "CO"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "United Power",
+		"lseId": " Inc",
+		"masterTariffId": "1528",
+		"serviceCharge": "3163333",
+		"serviceRate": "17",
+		"stateAbbrev": "0.10432"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "City of Longmont",
+		"lseId": "201",
+		"masterTariffId": "3160400",
+		"serviceCharge": "12.4",
+		"serviceRate": "0.10988885",
+		"stateAbbrev": "CO"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "Town of Frederick",
+		"lseId": "2698",
+		"masterTariffId": "3251495",
+		"serviceCharge": "14.4",
+		"serviceRate": "0.106",
+		"stateAbbrev": "CO"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "Poudre Valley R E A",
+		"lseId": " Inc",
+		"masterTariffId": "874",
+		"serviceCharge": "3190149",
+		"serviceRate": "24.5",
+		"stateAbbrev": "9.3960000000000002E-2"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "Eversource Energy (Formerly Connecticut Light & Power Co)",
+		"lseId": "2250",
+		"masterTariffId": "614",
+		"serviceCharge": "19.25",
+		"serviceRate": "0.17197646",
+		"stateAbbrev": "CT"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "United Illuminating Co",
+		"lseId": "1527",
+		"masterTariffId": "3153052",
+		"serviceCharge": "9.67",
+		"serviceRate": "0.22383800000000001",
+		"stateAbbrev": "CT"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "Groton Dept of Utilities",
+		"lseId": "2849",
+		"masterTariffId": "3180459",
+		"serviceCharge": "11.5",
+		"serviceRate": "0.147065058632395",
+		"stateAbbrev": "CT"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "Eversource Energy (Formerly NSTAR Electric Company)",
+		"lseId": "2437",
+		"masterTariffId": "2606",
+		"serviceCharge": "6.43",
+		"serviceRate": "0.20097000000000001",
+		"stateAbbrev": "MA"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "National Grid - Massachusetts",
+		"lseId": "310",
+		"masterTariffId": "823",
+		"serviceCharge": "5.5",
+		"serviceRate": "0.23563000000000001",
+		"stateAbbrev": "MA"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "Unitil- Massachusetts (Fitchburg Gas and Electric Light Company)",
+		"lseId": "2639",
+		"masterTariffId": "3156607",
+		"serviceCharge": "7",
+		"serviceRate": "0.24016402000000001",
+		"stateAbbrev": "MA"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "Taunton Municipal Lighting Plant",
+		"lseId": "1394",
+		"masterTariffId": "3161784",
+		"serviceCharge": "9.6999999999999993",
+		"serviceRate": "0.13161337000000001",
+		"stateAbbrev": "MA"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "Town of Concord",
+		"lseId": "2244",
+		"masterTariffId": "3200715",
+		"serviceCharge": "5.87",
+		"serviceRate": "0.167905555024248",
+		"stateAbbrev": "MA"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "Eversource Energy (Formerly Western massachusetts Elec Co)",
+		"lseId": "1688",
+		"masterTariffId": "81004",
+		"serviceCharge": "6",
+		"serviceRate": "0.19228041000000001",
+		"stateAbbrev": "MA"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "Baltimore Gas & Electric Co",
+		"lseId": "286",
+		"masterTariffId": "674",
+		"serviceCharge": "8.26",
+		"serviceRate": "0.135661",
+		"stateAbbrev": "MD"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "Eversource Energy (Formerly Public Service Co of NH)",
+		"lseId": "915",
+		"masterTariffId": "843",
+		"serviceCharge": "12.64",
+		"serviceRate": "0.17934",
+		"stateAbbrev": "NH"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "Unitil Energy Systems",
+		"lseId": "1870",
+		"masterTariffId": "3153831",
+		"serviceCharge": "15.24",
+		"serviceRate": "0.14646016000000001",
+		"stateAbbrev": "NH"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "New Hampshire Elec Coop Inc",
+		"lseId": "541",
+		"masterTariffId": "3166395",
+		"serviceCharge": "28.93",
+		"serviceRate": "0.16234000000000001",
+		"stateAbbrev": "NH"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "Liberty Utilities (Granite State Electric)",
+		"lseId": "1907",
+		"masterTariffId": "3153781",
+		"serviceCharge": "14.54",
+		"serviceRate": "0.16083111",
+		"stateAbbrev": "NH"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "Jersey Central Power & Lt Co",
+		"lseId": "3111",
+		"masterTariffId": "558",
+		"serviceCharge": "2.98",
+		"serviceRate": "0.13491814999999999",
+		"stateAbbrev": "NJ"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "Atlantic City Electric Co",
+		"lseId": "3094",
+		"masterTariffId": "80698",
+		"serviceCharge": "5",
+		"serviceRate": "0.187496",
+		"stateAbbrev": "NJ"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "Public Service Elec & Gas Co",
+		"lseId": "918",
+		"masterTariffId": "577",
+		"serviceCharge": "2.4300000000000002",
+		"serviceRate": "0.16176188999999999",
+		"stateAbbrev": "NJ"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "Central Hudson Gas & Elec Corp",
+		"lseId": "2033",
+		"masterTariffId": "85880",
+		"serviceCharge": "24",
+		"serviceRate": "0.1429048",
+		"stateAbbrev": "NY"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "Consolidated Edison Co-NY Inc",
+		"lseId": "2252",
+		"masterTariffId": "809",
+		"serviceCharge": "16.96",
+		"serviceRate": "0.1987023",
+		"stateAbbrev": "NY"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "National Grid - New York",
+		"lseId": "579",
+		"masterTariffId": "803",
+		"serviceCharge": "17",
+		"serviceRate": "0.10121118",
+		"stateAbbrev": "NY"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "New York State Elec & Gas Corp",
+		"lseId": "562",
+		"masterTariffId": "80701",
+		"serviceCharge": "15.92",
+		"serviceRate": "0.10842857",
+		"stateAbbrev": "NY"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "Orange & Rockland Utils Inc",
+		"lseId": "691",
+		"masterTariffId": "81134",
+		"serviceCharge": "21.02",
+		"serviceRate": "0.16608982",
+		"stateAbbrev": "NY"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "PSEG Long Island",
+		"lseId": "200",
+		"masterTariffId": "811",
+		"serviceCharge": "10.8",
+		"serviceRate": "0.19537928258001899",
+		"stateAbbrev": "NY"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "National Grid - Rhode Island (The Narragansett Electric Co)",
+		"lseId": "507",
+		"masterTariffId": "859",
+		"serviceCharge": "6.59",
+		"serviceRate": "0.18892",
+		"stateAbbrev": "RI"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "Green Mountain Power Corp",
+		"lseId": "2825",
+		"masterTariffId": "2682",
+		"serviceCharge": "14.42",
+		"serviceRate": "0.16261",
+		"stateAbbrev": "VT"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "Washington Electric Coop Inc",
+		"lseId": "1624",
+		"masterTariffId": "3212199",
+		"serviceCharge": "12.24",
+		"serviceRate": "0.22079496000000001",
+		"stateAbbrev": "VT"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "Vermont Electric Cooperative",
+		"lseId": " Inc.",
+		"masterTariffId": "1561",
+		"serviceCharge": "3211973",
+		"serviceRate": "17.22",
+		"stateAbbrev": "0.18157535999999999"
+	},
+	{
+		"rateDate": "12-12-17",
+		"utilityVendor": "Village of Northfield",
+		"lseId": "630",
+		"masterTariffId": "3212188",
+		"serviceCharge": "8.01",
+		"serviceRate": "0.14391712000000001",
+		"stateAbbrev": "VT"
+	},
+	{
+		"rateDate": ""
+	}
+]

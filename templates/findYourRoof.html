@@ -1,0 +1,20 @@
+<div class="col-md-12">
+    <h3>Find your roof</h3>
+    <form id="solar_quote_basic_1" class="txt-center solar-quote-basic" action="https://www.solar-estimate.org/calculators/solar-quote/full-address">
+        <input type="hidden" name="_token" value="JrMMAss3KjppMl8i6ahJs91wVqyZORPb1AybEsqj">
+        <div class="form-group">
+            <input type="hidden" name="calculator" value="solar_quote">
+            <div class="popover-parent ">
+                <label for="solar_quote_basic_1_full_address" class="hidden">Enter Address</label>
+                <input type="text" id="solar_quote_basic_1_full_address" class="form-control input-lg" placeholder="Enter Address" autocomplete="off" name="full_address" value="" data-toggle="popover" data-placement="bottom" data-trigger="manual" data-content="" data-template="<div class='popover calc-error-popover'><div class='arrow'></div><div class='popover-inner'><div class='popover-content'><p></p></div></div></div>" onblur="hidepopover(this)" onclick="hidepopover(this)">
+            </div>
+            <input type="hidden" id="street_number" name="street_number" value="">
+            <input type="hidden" id="route" name="street_name" value="">
+            <input type="hidden" id="locality" name="city" value="">
+            <input type="hidden" id="postal_code" name="zip" value="80537">
+            <input type="hidden" id="administrative_area_level_1" name="state_abbr" value="">
+            <input type="hidden" id="country" name="country" value="">
+                </div>
+        <button type="submit" data-loading-text="Loading..." onclick="$(this).button('loading')" class="btn btn-primary btn-lg">Search <i class="glyphicon glyphicon-chevron-right"></i></button>
+    </form>
+</div>

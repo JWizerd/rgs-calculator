@@ -1,0 +1,26 @@
+<div class="container" id="zipCodeForm">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <div class="row">
+                <div class="hidden-xs">
+                    <div class="max700 text-center">
+                        <h3><a href="#">How much do solar panels cost in your city?</a></h3><p>Solar panel cost depends on location, power usage, your utility provider and finance method.</p><p>Calculate required system size, cost &amp; payback period and compare deals offered by local solar companies online.</p>
+                    </div>
+                </div>
+                <div class="visible-xs">
+                    <h4><a href="#">How much do solar panels cost?</a></h4><p>Use the most advanced solar calculator to find the real cost in your city.</p>
+                </div>
+            </div>
+            <p>&nbsp;</p>
+            <form id="solar_quote_basic_1" data-valid="false" class="form-inline txt-center solar-quote-basic" action="" method="post" onsubmit="event.preventDefault(); zipcodeForm.validate();">
+                <div class="form-group">
+                    <div class="popover-parent">
+                        <label for="solar_quote_basic_1_zip" class="hidden">Enter ZIP Code</label>
+                        <input required type="number" id="solar_quote_basic_1_zip" class="form-control input-lg" placeholder="Enter ZIP Code" autocomplete="postal-code" name="zip">
+                    </div>
+                </div>
+                <button id="zipcode_start_button" type="submit" class="btn btn-info btn-info-gradient btn-lg" style="min-width: 177px;">Get Started <i class="glyphicon glyphicon-chevron-right"></i></button>
+            </form>
+        </div>
+    </div>
+</div>
