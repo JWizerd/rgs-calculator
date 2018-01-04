@@ -4,7 +4,7 @@ require_once('simplexlsx.php');
 
 $file = 'exutilityRateData.xlsx';
 $xlsx = SimpleXLSX::parse($file);
-$json = encodeXlsx($xlsx);
+$json = encodeXlsx(prepareData($xlsx));
 
 function checkXlsx($xlsx) {
 	if ( $xlsx ) {
@@ -16,11 +16,18 @@ function checkXlsx($xlsx) {
 	}
 }
 
-function setKeys($xlsx) {
+function prepareData($xlsx) {
 	$keys = $xlsx->rows()[0];
-	foreach ($xlsx->rows() as $row => $field) {
-		print_r($field);
+	$xlsx_obj = [];
+	foreach ($xlsx->rows() as $row => $fields) {
+		array_push($xlsx_obj, array_combine($keys,  $fields));
 	}
+	array_shift($xlsx_obj);
+	return $xlsx_obj;
+}
+
+function removeInititalKeySet($obj) {
+
 }
 
 /**
@@ -28,17 +35,8 @@ function setKeys($xlsx) {
  * @return encoded JSON Object 
  */
 function encodeXlsx($xlsx) {
-	return $json = json_encode($xlsx->rows());
+	return json_encode($xlsx);
 }
 
-// encodeXlsx($xlsx);
-
-// echo '<pre>';
-// print_r($json);
-// echo '</pre>';
-
-echo '<pre>';
-setKeys($xlsx);
-echo '</pre>';
-
-// checkXlsx($xlsx);
+header('Content-Type: application/json');
+echo $json;
