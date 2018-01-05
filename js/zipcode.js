@@ -29,17 +29,16 @@ var zipcodeForm = {
 		var endpoint = 'http://www.zippopotam.us/us/' + this.zipcode
 
 		$.get(endpoint, function(data) {
-			document.cookie = "zipcode=" + data['post code']
-
-			console.log(whitelist.includes(data['places'][0]['state abbreviation']))
+			if (whitelist.includes(data['places'][0]['state abbreviation'])) {
+				document.cookie = "zipcode=" + data['post code']
+				$('#solar_quote_basic_1').data('valid', true)
+				view.renderNextTemplate('monthlyUtilities');
+			} else {
+				errorMsg('Unfortunately we do not service your state.')
+			}
 		})
 		.fail(function(){
 			errorMsg('Please enter valid zipcode')
 		})
-		.done(function() {
-			$('#solar_quote_basic_1').data('valid', true)
-			view.renderNextTemplate('monthlyUtilities');
-		})
-
 	}
 }
