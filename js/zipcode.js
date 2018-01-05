@@ -30,9 +30,9 @@ var zipcodeForm = {
 
 		$.get(endpoint, function(data) {
 			if (whitelist.includes(data['places'][0]['state abbreviation'])) {
-				document.cookie = "zipcode=" + data['post code']
+				Cookies.set('zipcode', data['post code'])
 				$('#solar_quote_basic_1').data('valid', true)
-				view.renderNextTemplate('monthlyUtilities');
+				view.renderNextTemplate('monthlyUtilities')
 			} else {
 				errorMsg('Unfortunately we do not service your state.')
 			}
