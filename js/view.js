@@ -17,20 +17,24 @@ var view = {
 
 	renderStage: function() {},
 
-	renderTemplate: function(template) {
+	renderTemplate: function(template, fn = null) {
 		$.get('./templates/' + template + '.html', function(data) {
 			$('#mad-solar-calc').append(data)
 		}).done(function(){
-			$('#mad-solar-calc').fadeIn('slow')
+			$('#mad-solar-calc').fadeIn('slow', function(){
+				if (typeof fn == 'function') {
+					fn()
+				}
+			})
 		})
 	},
 
-	renderNextTemplate: function (nextTemp) {
+	renderNextTemplate: function (nextTemp, fn = null) {
 		$this = this;
 		this.stageTracker()
 		$('#mad-solar-calc').fadeOut('slow', function(){
 			$(this).children().remove()
-			$this.renderTemplate(nextTemp)
+			$this.renderTemplate(nextTemp, fn)
 		})
 	}
 }

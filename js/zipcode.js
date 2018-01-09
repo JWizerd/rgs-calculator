@@ -25,20 +25,26 @@ var zipcodeForm = {
 	},
 
 	isValidZipCode: function() {
-		var whitelist = this.whitelist();
+		var that = this
+		var whitelist = this.whitelist()
 		var endpoint = 'http://www.zippopotam.us/us/' + this.zipcode
-
 		$.get(endpoint, function(data) {
-			if (whitelist.includes(data['places'][0]['state abbreviation'])) {
+			console.log('API Call to Zippopotamus is complete.')
+		})
+		.fail(function(){
+			errorMsg('Please enter valid zipcode')
+		})
+		.done(function(data){
+			var stateAbbrev = data['places'][0]['state abbreviation']
+			console.log(stateAbbrev)
+			if (whitelist.includes(stateAbbrev)) {
 				Cookies.set('zipcode', data['post code'])
+				Cookies.set('stateAbbrev', stateAbbrev)
 				$('#solar_quote_basic_1').data('valid', true)
 				view.renderNextTemplate('monthlyUtilities')
 			} else {
 				errorMsg('Unfortunately we do not service your state.')
 			}
-		})
-		.fail(function(){
-			errorMsg('Please enter valid zipcode')
 		})
 	}
 }

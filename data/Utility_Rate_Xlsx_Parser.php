@@ -22,7 +22,7 @@ function prepareData($xlsx) {
 	$keys = $xlsx->rows()[0];
 	$xlsx_obj = [];
 	foreach ($xlsx->rows() as $row => $fields) {
-		array_push($xlsx_obj, array_combine($keys,  $fields));
+		array_push($xlsx_obj, array_combine($keys, $fields));
 	}
 	array_shift($xlsx_obj);
 	return $xlsx_obj;
