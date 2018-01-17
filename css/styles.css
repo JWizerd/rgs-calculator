@@ -1,3 +1,111 @@
+/* General */
+
 #solar_quote_basic_1_utility_cost_label:before {
 	content: '$';
+}
+
+#mad-solar-calc {
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+	color: white;
+	text-align: center;
+}
+
+#mad-solar-calc input[type=number]::-webkit-inner-spin-button, 
+#mad-solar-calc input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+#mad-solar-calc h1,
+#mad-solar-calc h2,
+#mad-solar-calc h3 {
+	font-size: 35px;
+}
+
+.calc-divider {
+	width: 30%;
+	margin: 20px auto;
+	height: 4px;
+	background: #ffcf4a;
+}
+
+#mad-solar-calc p {
+	font-size: 18px;
+}
+
+#mad-solar-calc button {
+	background: #0098d0;
+	border-radius: 25px;
+	padding: 15px 23px;
+	transition: ease all .3s;
+	border: none;
+}
+
+#mad-solar-calc button:focus,
+input[type=range]:focus,
+#mad-solar-calc input:focus {
+	border: none;
+	outline: none;
+	box-shadow: none;
+}
+
+#mad-solar-calc button:hover {
+	background: #ffcf4a;	
+	cursor: pointer;
+}
+
+/* monthly utilities */
+
+#solar_quote_basic_1_utility_cost_label input {
+  background: transparent;
+  border: none;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+}
+
+#solar_quote_basic_1_utility_cost_label {
+  background: rgba(0,0,0,.4);
+  display: inline-block;
+  max-width: 250px;
+  padding: 4px 20px;
+} 
+
+/* utility providers */
+
+.solar_quote_basic_utility {
+	width: 200px;
+	margin: 10px 0;
+}
+
+/* find your roof */
+
+#solar_quote_basic_roof button,
+#solar_quote_basic_roof .form-group {
+	display: inline-block;
+}
+
+#solar_quote_basic_roof .form-group {
+	width: 84%;
+}
+
+#mad-solar-calc #solar_quote_basic_roof button {
+	background: #0098d0;
+	border-radius: 10px;
+	padding: 12px 23px;
+	transition: ease all .3s;
+	border: none;
+	position: relative;
+	top: -2px;
+}
+
+/* media */
+
+@media (min-width: 992px) {
+	#mad-solar-calc {
+		min-height: 750px;
+		display: flex;
+		align-items: center;
+	}
 }

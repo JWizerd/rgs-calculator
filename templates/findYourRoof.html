@@ -2,6 +2,8 @@
     <div class="row">
       <div class="col-md-12">
           <h3>Find your roof</h3>
+          <p class="calc-divider"></p>
+          <p>Begin typing below to find your street address. Once you have found your address, press continue.</p>
           <form id="solar_quote_basic_roof" class="txt-center solar-quote-basic" onsubmit="event.preventDefault(); Roof.setAddress(); Roof.validate();">
               <div class="form-group">
                   <input type="hidden" name="calculator" value="solar_quote">
@@ -12,7 +14,9 @@
                       <input type="text" id="solar_quote_basic_full_address" class="form-control input-lg" placeholder="Enter Address" name="full_address" value="" onfocus="initAutocomplete(); geolocate()"> 
                   </div>
               </div>
-              <button type="submit" class="btn btn-primary btn-lg">Search <i class="glyphicon glyphicon-chevron-right" id="find-your-address"></i></button>
+              <button type="submit" class="btn btn-primary btn-lg">
+                Search <i class="glyphicon glyphicon-chevron-right submit-template" id="find-your-address"></i>
+              </button>
           </form>
       </div>  
     </div>

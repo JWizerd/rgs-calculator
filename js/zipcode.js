@@ -1,3 +1,5 @@
+var mapsBg;
+
 var zipcodeForm = {
 	zipcode: null,
 	that: this,

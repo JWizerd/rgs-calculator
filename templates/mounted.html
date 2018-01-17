@@ -5,7 +5,8 @@
                 <div class="hidden-xs">
                     <div class="max700 text-center">
                         <h3>How much do solar panels cost in your city?</h3>
-                        <p>Solar panel cost depends on location, power usage, your utility provider and finance method.</p><p>Calculate required system size, cost &amp; payback period and compare deals offered by local solar companies online.</p>
+                        <p class="calc-divider"></p>
+                        <p>Solar panel cost depends on location, power usage, your utility provider and finance method.</p><p>Calculate required system size, cost &amp; payback period and compare deals offered by local utility providers.</p>
                     </div>
                 </div>
                 <div class="visible-xs">
@@ -13,14 +14,14 @@
                 </div>
             </div>
             <p>&nbsp;</p>
-            <form id="solar_quote_basic_1" class="form-inline txt-center solar-quote-basic" action="" method="post" onsubmit="event.preventDefault(); zipcodeForm.validate();">
+            <form id="solar_quote_basic_1" class="form-inline txt-center solar-quote-basic" action="" method="post" onsubmit="event.preventDefault(); zipcodeForm.validate(event);">
                 <div class="form-group">
                     <div class="popover-parent">
                         <label for="solar_quote_basic_1_zip" class="hidden">Enter ZIP Code</label>
                         <input required type="number" id="solar_quote_basic_1_zip" class="form-control input-lg" placeholder="Enter ZIP Code" autocomplete="postal-code" name="zip">
                     </div>
                 </div>
-                <button id="zipcode_start_button" type="submit" class="btn btn-info btn-info-gradient btn-lg" style="min-width: 177px;">Get Started <i class="glyphicon glyphicon-chevron-right"></i></button>
+                <button id="zipcode_start_button" type="submit" data-pressed="false" class="btn btn-info btn-info-gradient btn-lg submit-template">Get Started <i class="glyphicon glyphicon-chevron-right"></i></button>
             </form>
         </div>
     </div>

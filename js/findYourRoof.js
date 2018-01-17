@@ -93,6 +93,7 @@ var Roof = {
       var lng = data.results[0].geometry.location.lng
       setTimeout(function(){
         init_map(lat, lng)
+        $('#gmap-address').html('<strong>Displaying</strong> ' + address)
       }, 1000)
     })
 		.fail(function(data){
@@ -105,5 +106,4 @@ var Roof = {
     Cookies.set('latitude', latitude)
     Cookies.set('roofImage', 'https://maps.googleapis.com/maps/api/staticmap?center=' + latitude +',' + longitude + '&zoom=20&size=600x600&maptype=satellite&key=AIzaSyAUKq3IavSkzBPuJMHVTiEpyUo_m8PwHaM')
   }
-
 }
