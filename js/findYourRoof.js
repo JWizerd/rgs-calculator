@@ -93,7 +93,7 @@ var Roof = {
       var lng = data.results[0].geometry.location.lng
       setTimeout(function(){
         init_map(lat, lng)
-        $('#gmap-address').html('<strong>Displaying</strong> ' + address)
+        $('#gmap-address').html('<strong>Displaying:</strong> ' + address)
       }, 1000)
     })
 		.fail(function(data){
