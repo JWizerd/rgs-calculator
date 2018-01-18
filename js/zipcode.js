@@ -39,8 +39,8 @@ var zipcodeForm = {
 		.done(function(data){
 			var stateAbbrev = data['places'][0]['state abbreviation']
 			if (whitelist.includes(stateAbbrev)) {
-				Cookies.set('zipcode', data['post code'], { expires: 1 })
-				Cookies.set('stateAbbrev', stateAbbrev, { expires: 1 })
+				Cookies.set('zipcode', data['post code'], { expires: view.expiration })
+				Cookies.set('stateAbbrev', stateAbbrev, { expires: view.expiration })
 				$('#solar_quote_basic_1').data('valid', true)
 				view.renderNextTemplate('monthlyUtilities')
 			} else {

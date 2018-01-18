@@ -1,4 +1,5 @@
 var view = {
+	expiration: 1/48,
 	stageTracker: function() {
 		if (Cookies.get('stage') === undefined) {
 			Cookies.set('stage', 'mounted')
@@ -50,7 +51,7 @@ var view = {
 		$this = this;
 
 		// increment stage cookies for stage tracking 
-		Cookies.set('stage', nextTemp, { expires: 1 })
+		Cookies.set('stage', nextTemp, { expires: this.expiration })
 		$submit = $('.submit-template')
 
 		$('#mad-solar-calc').fadeOut('slow', function(){

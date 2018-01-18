@@ -29,7 +29,7 @@ var utilPros = {
 		})
 	},
 
-	persistData: function() {
-		Cookies.set('serviceRate', serviceRate, { expires: 1 })
+	save: function() {
+		Cookies.set('serviceRate', serviceRate, { expires: view.expiration })
 	}
 }

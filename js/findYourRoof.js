@@ -101,9 +101,9 @@ var Roof = {
 	},
 
   save: function() {
-    Cookies.set('address', address, { expires: 1 })
-    Cookies.set('longitude', longitude, { expires: 1 })
-    Cookies.set('latitude', latitude, { expires: 1 })
-    Cookies.set('roofImage', 'https://maps.googleapis.com/maps/api/staticmap?center=' + latitude +',' + longitude + '&zoom=20&size=600x600&maptype=satellite&key=AIzaSyAUKq3IavSkzBPuJMHVTiEpyUo_m8PwHaM', { expires: 1 })
+    Cookies.set('address', address, { expires: view.expiration })
+    Cookies.set('longitude', longitude, { expires: view.expiration })
+    Cookies.set('latitude', latitude, { expires: view.expiration })
+    Cookies.set('roofImage', 'https://maps.googleapis.com/maps/api/staticmap?center=' + latitude +',' + longitude + '&zoom=20&size=600x600&maptype=satellite&key=AIzaSyAUKq3IavSkzBPuJMHVTiEpyUo_m8PwHaM', { expires: view.expiration })
   }
 }
