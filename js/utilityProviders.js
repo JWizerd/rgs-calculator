@@ -30,6 +30,6 @@ var utilPros = {
 	},
 
 	persistData: function() {
-		Cookies.set('serviceRate', serviceRate)
+		Cookies.set('serviceRate', serviceRate, { expires: 1 })
 	}
 }

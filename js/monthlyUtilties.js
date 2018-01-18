@@ -4,6 +4,6 @@ var monthlyUtils = {
   },
   
   save: function() {
-  	Cookies.set('monthlyUtilityRate', $('#solar_quote_basic_1_utility_cost_label input').val())
+  	Cookies.set('monthlyUtilityRate', $('#solar_quote_basic_1_utility_cost_label input').val(), { expires: 1 })
   }
 }

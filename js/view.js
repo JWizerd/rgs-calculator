@@ -1,21 +1,31 @@
 var view = {
-	stage: null,
 	stageTracker: function() {
-		this.stageSetter()
+		if (Cookies.get('stage') === undefined) {
+			Cookies.set('stage', 'mounted')
+		}
 
-	},
-
-	stageSetter: function(){
-		// keep track of what stage a user is on in calculator
-		if (this.stage === null) {
-			Cookies.set('stage', 1)
-			this.stage = 1
-		} else {
-			Cookies.set('stage', this.stage + 1)
+		switch	(Cookies.get('stage')) {
+			case 'mounted':
+				this.renderTemplate('mounted')
+				break;
+			case 'monthlyUtilities':
+				this.renderTemplate('monthlyUtilities')
+				break;
+			case 'utilityProviders':
+				view.renderTemplate('utilityProviders', utilPros.render)
+				break;
+			case 'findYourRoof':
+			  this.renderTemplate('findYourRoof')
+			  break;
+			case 'showRoofMap': 
+				// send user on select map location back to re-enter their address for gmaps
+				this.renderTemplate('findYourRoof')
+				break;
+			case 'yourSystemEstimate': 
+				this.renderTemplate('yourSystemEstimate')
+				break;
 		}
 	},
-
-	renderStage: function() {},
 
 	renderTemplate: function(template, fn = null) {
 
@@ -38,7 +48,9 @@ var view = {
 
 	renderNextTemplate: function (nextTemp, fn = null) {
 		$this = this;
-		this.stageTracker()
+
+		// increment stage cookies for stage tracking 
+		Cookies.set('stage', nextTemp, { expires: 1 })
 		$submit = $('.submit-template')
 
 		$('#mad-solar-calc').fadeOut('slow', function(){

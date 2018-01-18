@@ -72,7 +72,6 @@ var Roof = {
 
 	setAddress: function() {
 		address = $('#solar_quote_basic_full_address').val();
-		console.log(address)
 	},
 
   validate: function() {
@@ -102,8 +101,9 @@ var Roof = {
 	},
 
   save: function() {
-    Cookies.set('longitude', longitude)
-    Cookies.set('latitude', latitude)
-    Cookies.set('roofImage', 'https://maps.googleapis.com/maps/api/staticmap?center=' + latitude +',' + longitude + '&zoom=20&size=600x600&maptype=satellite&key=AIzaSyAUKq3IavSkzBPuJMHVTiEpyUo_m8PwHaM')
+    Cookies.set('address', address, { expires: 1 })
+    Cookies.set('longitude', longitude, { expires: 1 })
+    Cookies.set('latitude', latitude, { expires: 1 })
+    Cookies.set('roofImage', 'https://maps.googleapis.com/maps/api/staticmap?center=' + latitude +',' + longitude + '&zoom=20&size=600x600&maptype=satellite&key=AIzaSyAUKq3IavSkzBPuJMHVTiEpyUo_m8PwHaM', { expires: 1 })
   }
 }

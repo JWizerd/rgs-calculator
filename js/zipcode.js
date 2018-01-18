@@ -31,17 +31,16 @@ var zipcodeForm = {
 		var whitelist = this.whitelist()
 		var endpoint = 'http://www.zippopotam.us/us/' + this.zipcode
 		$.get(endpoint, function(data) {
-			console.log('API Call to Zippopotamus is complete.')
+			
 		})
 		.fail(function(){
 			errorMsg('Please enter valid zipcode')
 		})
 		.done(function(data){
 			var stateAbbrev = data['places'][0]['state abbreviation']
-			console.log(stateAbbrev)
 			if (whitelist.includes(stateAbbrev)) {
-				Cookies.set('zipcode', data['post code'])
-				Cookies.set('stateAbbrev', stateAbbrev)
+				Cookies.set('zipcode', data['post code'], { expires: 1 })
+				Cookies.set('stateAbbrev', stateAbbrev, { expires: 1 })
 				$('#solar_quote_basic_1').data('valid', true)
 				view.renderNextTemplate('monthlyUtilities')
 			} else {
