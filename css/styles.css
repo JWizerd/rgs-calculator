@@ -1,5 +1,9 @@
 /* General */
 
+.solar-quote-basic {
+	margin-top: 30px;
+}
+
 #solar_quote_basic_1_utility_cost_label:before {
 	content: '$';
 }
@@ -25,7 +29,7 @@
 
 .calc-divider {
 	width: 30%;
-	margin: 20px auto 40px;
+	margin: 20px auto;
 	height: 4px;
 	background: #ffcf4a;
 }
@@ -121,6 +125,10 @@ input[type=range]:focus,
 	box-shadow: -2px 1px 13px #000;
 }
 
+.solar_quote_roof small {
+	display: block;
+}
+
 /* roof type */
 
 #mad-solar-calc #roof-type-1 {
@@ -169,7 +177,7 @@ input[type=range]:focus,
 }
 
 #mad-solar-calc #roof-type-6 {
-	background: #0098d0;
+	background: rgba(0, 152, 208, .6);
 }
 
 /* roof pitch */
@@ -215,8 +223,8 @@ input[type=range]:focus,
 #mad-solar-calc #roof-shade-1 {
 	background: 
 		linear-gradient(
-      rgba(0,0,0,.3),
-      rgba(0,0,0,.3)
+      rgba(0,0,0,.1),
+      rgba(0,0,0,.1)
 		),
 		url(../img/shade_unshaded.jpg);
 }
@@ -224,8 +232,8 @@ input[type=range]:focus,
 #mad-solar-calc #roof-shade-2 {
 	background: 
 		linear-gradient(
-      rgba(0,0,0,.3),
-      rgba(0,0,0,.3)
+      rgba(0,0,0,.1),
+      rgba(0,0,0,.1)
 		),
 		url(../img/shade_can.jpg);
 }
@@ -242,8 +250,8 @@ input[type=range]:focus,
 #mad-solar-calc #roof-shade-4 {
 	background: 
 		linear-gradient(
-      rgba(0,0,0,.3),
-      rgba(0,0,0,.3)
+      rgba(0,0,0,.1),
+      rgba(0,0,0,.1)
 		),
 		url(../img/shade_severe.jpg);
 }

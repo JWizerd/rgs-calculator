@@ -1,5 +1,7 @@
 var view = {
+	// cookie expiration time
 	expiration: 1/48,
+
 	stageTracker: function() {
 		if (Cookies.get('stage') === undefined) {
 			Cookies.set('stage', 'mounted')
@@ -51,6 +53,10 @@ var view = {
 					fn()
 				}
 
+				// to keep track of button state for preventing 
+				// click events from firing more than once
+				$('button').addClass('submit-template')
+
 			})
 
 		})
@@ -67,6 +73,7 @@ var view = {
 
 			$(this).children().remove()
 			// stop render template jax call from firing more than once
+
 			if (!$submit.data('pressed')) {
 
 				$this.renderTemplate(nextTemp, fn)

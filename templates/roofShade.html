@@ -1,19 +1,19 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <h3>Select Your Roof Pitch</h3>
+      <h3>Select Your Roof Shade</h3>
       <p class="calc-divider"></p>
 
       <form id="solar_quote_roof_type" class="txt-center solar-quote-basic roof-info" onsubmit="event.preventDefault(); view.renderNextTemplate('yourSystemEstimate');">
 
         <div class="form-group ">
-          <label for="solar_quote_basic_1_utility_cost" class="hidden">Select Your Roof Pitch</label>
+          <label for="solar_quote_basic_1_utility_cost" class="hidden">Select Your Roof Shade</label>
           <div>
 
             <div class="row">
               <div class="cta-circle-wrapper col-md-3 col-sm-3 col-xs-6">
 
-                <button type="submit" onclick="Cookies.set('roof_shade', jQuery(this).val())" id="roof-shade-1" class="solar_quote_roof submit-template" name="roof_shade" value="Unshaded">
+                <button type="submit" onclick="Cookies.set('roof_shade', jQuery(this).val())" id="roof-shade-1" class="solar_quote_roof" name="roof_shade" value="Unshaded" data-pressed="false">
                   <div class="cta-square">
                     <div class="cta-link">
                       <div class="cta-link-hover"></div>
@@ -27,7 +27,7 @@
 
               <div class="cta-circle-wrapper col-md-3 col-sm-3 col-xs-6">
 
-                <button type="submit" onclick="Cookies.set('roof_shade', jQuery(this).val())" id="roof-shade-2" class="solar_quote_roof submit-template" name="roof_shade" value="Part Shade Can Improve">
+                <button type="submit" onclick="Cookies.set('roof_shade', jQuery(this).val())" id="roof-shade-2" class="solar_quote_roof" name="roof_shade" value="Part Shade Can Improve">
                   <div class="cta-square">
                     <div class="cta-link">
                       <div class="cta-link-hover"></div>
@@ -41,7 +41,7 @@
 
               <div class="cta-circle-wrapper col-md-3 col-sm-3 col-xs-6">
 
-                <button type="submit" onclick="Cookies.set('roof_shade', jQuery(this).val())" id="roof-shade-3" class="solar_quote_roof submit-template" name="roof_shade" value="Part Shade Cannot Improve">
+                <button type="submit" onclick="Cookies.set('roof_shade', jQuery(this).val())" id="roof-shade-3" class="solar_quote_roof" name="roof_shade" value="Part Shade Cannot Improve">
                   <div class="cta-square">
                     <div class="cta-link">
                       <div class="cta-link-hover"></div>
@@ -55,7 +55,7 @@
 
               <div class="cta-circle-wrapper col-md-3 col-sm-3 col-xs-6">
 
-                <button type="submit" onclick="Cookies.set('roof_shade', jQuery(this).val())" id="roof-shade-4" class="solar_quote_roof submit-template" name="roof_shade" value="Severe Shade">
+                <button type="submit" onclick="Cookies.set('roof_shade', jQuery(this).val())" id="roof-shade-4" class="solar_quote_roof" name="roof_shade" value="Severe Shade">
                   <div class="cta-square">
                     <div class="cta-link">
                       <div class="cta-link-hover"></div>
