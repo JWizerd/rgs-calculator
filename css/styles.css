@@ -25,7 +25,7 @@
 
 .calc-divider {
 	width: 30%;
-	margin: 20px auto;
+	margin: 20px auto 40px;
 	height: 4px;
 	background: #ffcf4a;
 }
@@ -38,7 +38,7 @@
 	background: #0098d0;
 	border-radius: 25px;
 	padding: 15px 23px;
-	transition: ease all .3s;
+	transition: ease all .1s;
 	border: none;
 }
 
@@ -49,10 +49,10 @@ input[type=range]:focus,
 	outline: none;
 	box-shadow: none;
 }
-
-#mad-solar-calc button:hover {
-	background: #ffcf4a;	
-	cursor: pointer;
+ 
+#mad-solar-calc button:hover,
+#mad-solar-calc .roof-info .solar_quote_roof:hover {
+	cursor: pointer; 
 }
 
 /* monthly utilities */
@@ -99,6 +99,153 @@ input[type=range]:focus,
 	border: none;
 	position: relative;
 	top: -2px;
+}
+
+/* roof info */
+
+#mad-solar-calc .roof-info .solar_quote_roof {
+	width: 200px;
+	max-width: 100%;
+	height: 200px;
+	border-radius: 50%;
+	border: 6px solid white;
+	font-size: 20px;
+	margin-bottom: 30px;
+	transition: ease all .3s;
+	box-shadow: 0px 0px 10px #000;
+	background-size: cover !important;
+}
+
+#mad-solar-calc .roof-info .solar_quote_roof:hover {
+	transform: rotate(8deg);
+	box-shadow: -2px 1px 13px #000;
+}
+
+/* roof type */
+
+#mad-solar-calc #roof-type-1 {
+	background: 
+		linear-gradient(
+      rgba(0,0,0,.3),
+      rgba(0,0,0,.3)
+		),
+		url(../img/roof_metal.jpg);
+}
+
+#mad-solar-calc #roof-type-2 {
+	background: 
+		linear-gradient(
+      rgba(0,0,0,.3),
+      rgba(0,0,0,.3)
+		),
+		url(../img/roof_shingles.jpg);
+}
+
+#mad-solar-calc #roof-type-3 {
+	background: 
+		linear-gradient(
+      rgba(0,0,0,.3),
+      rgba(0,0,0,.3)
+		),
+		url(../img/roof_concrete.jpg);
+}
+
+#mad-solar-calc #roof-type-4 {
+	background: 
+		linear-gradient(
+      rgba(0,0,0,.3),
+      rgba(0,0,0,.3)
+		),
+		url(../img/roof_clay.jpg);
+}
+
+#mad-solar-calc #roof-type-5 {
+	background: 
+		linear-gradient(
+      rgba(0,0,0,.3),
+      rgba(0,0,0,.3)
+		),
+		url(../img/roof_gm.jpg);
+}
+
+#mad-solar-calc #roof-type-6 {
+	background: #0098d0;
+}
+
+/* roof pitch */
+
+#mad-solar-calc #roof-pitch-1 {
+	background: 
+		linear-gradient(
+      rgba(0,0,0,.3),
+      rgba(0,0,0,.3)
+		),
+		url(../img/slant_flat.jpg);
+}
+
+#mad-solar-calc #roof-pitch-2 {
+	background: 
+		linear-gradient(
+      rgba(0,0,0,.3),
+      rgba(0,0,0,.3)
+		),
+		url(../img/slant_slight.jpg);
+}
+
+#mad-solar-calc #roof-pitch-3 {
+	background: 
+		linear-gradient(
+      rgba(0,0,0,.3),
+      rgba(0,0,0,.3)
+		),
+		url(../img/slant_medium.jpg);
+}
+
+#mad-solar-calc #roof-pitch-4 {
+	background: 
+		linear-gradient(
+      rgba(0,0,0,.3),
+      rgba(0,0,0,.3)
+		),
+		url(../img/slant_steep.jpg);
+}
+
+/* roof shading */
+
+#mad-solar-calc #roof-shade-1 {
+	background: 
+		linear-gradient(
+      rgba(0,0,0,.3),
+      rgba(0,0,0,.3)
+		),
+		url(../img/shade_unshaded.jpg);
+}
+
+#mad-solar-calc #roof-shade-2 {
+	background: 
+		linear-gradient(
+      rgba(0,0,0,.3),
+      rgba(0,0,0,.3)
+		),
+		url(../img/shade_can.jpg);
+}
+
+#mad-solar-calc #roof-shade-3 {
+	background: 
+		linear-gradient(
+      rgba(0,0,0,.3),
+      rgba(0,0,0,.3)
+		),
+		url(../img/shade_cannot.jpg);
+}
+
+#mad-solar-calc #roof-shade-4 {
+	background: 
+		linear-gradient(
+      rgba(0,0,0,.3),
+      rgba(0,0,0,.3)
+		),
+		url(../img/shade_severe.jpg);
 }
 
 /* media */

@@ -4,7 +4,7 @@
       <h3>Select Your Roof Pitch</h3>
       <p class="calc-divider"></p>
 
-      <form id="solar_quote_roof_type" class="txt-center solar-quote-basic roof-info" onsubmit="event.preventDefault(); view.renderNextTemplate('roofShade');">
+      <form id="solar_quote_roof_type" class="txt-center solar-quote-basic roof-info" onsubmit="event.preventDefault(); view.renderNextTemplate('yourSystemEstimate');">
 
         <div class="form-group ">
           <label for="solar_quote_basic_1_utility_cost" class="hidden">Select Your Roof Pitch</label>
@@ -13,11 +13,12 @@
             <div class="row">
               <div class="cta-circle-wrapper col-md-3 col-sm-3 col-xs-6">
 
-                <button type="submit" onclick="Cookies.set('roof_pitch', jQuery(this).val())" id="roof-pitch-1" class="solar_quote_roof submit-template" name="roof_pitch" value="flat">
+                <button type="submit" onclick="Cookies.set('roof_shade', jQuery(this).val())" id="roof-shade-1" class="solar_quote_roof submit-template" name="roof_shade" value="Unshaded">
                   <div class="cta-square">
                     <div class="cta-link">
                       <div class="cta-link-hover"></div>
-                      <span class="roof-attr">Flat</span>
+                      <span class="roof-attr">Unshaded</span>
+                      <small>9am to 3pm</small>
                     </div><!-- .cta-link -->
                   </div><!-- .cta-circle -->
                 </button>
@@ -26,11 +27,12 @@
 
               <div class="cta-circle-wrapper col-md-3 col-sm-3 col-xs-6">
 
-                <button type="submit" onclick="Cookies.set('roof_pitch', jQuery(this).val())" id="roof-pitch-2" class="solar_quote_roof submit-template" name="roof_pitch" value="Slight">
+                <button type="submit" onclick="Cookies.set('roof_shade', jQuery(this).val())" id="roof-shade-2" class="solar_quote_roof submit-template" name="roof_shade" value="Part Shade Can Improve">
                   <div class="cta-square">
                     <div class="cta-link">
                       <div class="cta-link-hover"></div>
-                      <span class="roof-attr">Slight</span>
+                      <span class="roof-attr">Part Shade</span>
+                      <small>(can improve)</small>
                     </div><!-- .cta-link -->
                   </div><!-- .cta-circle -->
                 </button>
@@ -39,11 +41,12 @@
 
               <div class="cta-circle-wrapper col-md-3 col-sm-3 col-xs-6">
 
-                <button type="submit" onclick="Cookies.set('roof_pitch', jQuery(this).val())" id="roof-pitch-3" class="solar_quote_roof submit-template" name="roof_pitch" value="Medium">
+                <button type="submit" onclick="Cookies.set('roof_shade', jQuery(this).val())" id="roof-shade-3" class="solar_quote_roof submit-template" name="roof_shade" value="Part Shade Cannot Improve">
                   <div class="cta-square">
                     <div class="cta-link">
                       <div class="cta-link-hover"></div>
-                      <span class="roof-attr">Medium</span>
+                      <span class="roof-attr">Part Shade</span>
+                      <small>(cannot improve)</small>
                     </div><!-- .cta-link -->
                   </div><!-- .cta-circle -->
                 </button>
@@ -52,11 +55,11 @@
 
               <div class="cta-circle-wrapper col-md-3 col-sm-3 col-xs-6">
 
-                <button type="submit" onclick="Cookies.set('roof_pitch', jQuery(this).val())" id="roof-pitch-4" class="solar_quote_roof submit-template" name="roof_pitch" value="Steep">
+                <button type="submit" onclick="Cookies.set('roof_shade', jQuery(this).val())" id="roof-shade-4" class="solar_quote_roof submit-template" name="roof_shade" value="Severe Shade">
                   <div class="cta-square">
                     <div class="cta-link">
                       <div class="cta-link-hover"></div>
-                      <span class="roof-attr">Steep</span>
+                      <span class="roof-attr">Severe Shade</span>
                     </div><!-- .cta-link -->
                   </div><!-- .cta-circle -->
                 </button>

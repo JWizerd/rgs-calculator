@@ -22,6 +22,15 @@ var view = {
 				// send user on select map location back to re-enter their address for gmaps
 				this.renderTemplate('findYourRoof')
 				break;
+			case 'roofType': 
+				this.renderTemplate('roofType')
+				break;
+			case 'roofPitch': 
+				this.renderTemplate('roofPitch')
+				break;
+			case 'roofShade': 
+				this.renderTemplate('roofShade')
+				break;
 			case 'yourSystemEstimate': 
 				this.renderTemplate('yourSystemEstimate')
 				break;
