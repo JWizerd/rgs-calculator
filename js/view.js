@@ -52,6 +52,7 @@ var view = {
 
 		// increment stage cookies for stage tracking 
 		Cookies.set('stage', nextTemp, { expires: this.expiration })
+		
 		$submit = $('.submit-template')
 
 		$('#mad-solar-calc').fadeOut('slow', function(){
