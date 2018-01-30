@@ -4,9 +4,7 @@
 			<h3>What is your average monthly utility bill?</h3>
 			<p class="calc-divider"></p>
 			<form id="solar_quote_basic_1" class="txt-center solar-quote-basic" action="" onsubmit="event.preventDefault(); monthlyUtils.save(); view.renderNextTemplate('utilityProviders', utilPros.render)">
-				<input type="hidden" name="_token" value="JrMMAss3KjppMl8i6ahJs91wVqyZORPb1AybEsqj">
 				<div class="form-group ">
-					<input type="hidden" name="calculator" value="solar_quote">
 					<label for="solar_quote_basic_1_utility_cost" class="hidden">Average Monthly Utility Cost</label>
 					<div>
 						<h4 id="solar_quote_basic_1_utility_cost_label" class="h1 range-result txt-info">
@@ -28,7 +26,7 @@
 					</div>
 					<span class="text-danger"></span>
 				</div>
-				<button type="submit" data-loading-text="Loading..." class="btn btn-primary btn-lg submit-template">Continue <i class="glyphicon glyphicon-chevron-right"></i></button>
+				<button type="submit" data-loading-text="Loading..." class="btn btn-primary btn-lg">Continue <i class="glyphicon glyphicon-chevron-right"></i></button>
 			</form>
 		</div>
 	</div>

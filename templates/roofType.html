@@ -1,95 +1,99 @@
-<div class="col-md-12">
-                        <h3>Select your roof type</h3>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Select Your Roof Type</h3>
+      <p class="calc-divider"></p>
 
-<form id="solar_quote_basic_roof-type" class="txt-center solar-quote-basic" action="https://www.solar-estimate.org/calculators/solar-quote/roof-type">
-    <input type="hidden" name="_token" value="JrMMAss3KjppMl8i6ahJs91wVqyZORPb1AybEsqj">
+      <form id="solar_quote_roof_type" class="txt-center solar-quote-basic roof-info" onsubmit="event.preventDefault(); view.renderNextTemplate('roofPitch');">
 
-    
-    <div class="form-group ">
-        <div class="bg-grey pad3030 min-250">
+        <div class="form-group ">
+          <label for="solar_quote_basic_1_utility_cost" class="hidden">Select Your Roof Type</label>
+          <div>
+
             <div class="row">
-                <input type="hidden" name="calculator" value="solar_quote">
+              <div class="cta-circle-wrapper col-md-4 col-sm-3 col-xs-6">
 
-                <div class="cta-circle-group">
+                <button type="submit" onclick="Cookies.set('roof_type', jQuery(this).val())" id="roof-type-1" class="solar_quote_roof" name="roof_type" value="metal">
+                  <div class="cta-square">
+                    <div class="cta-link">
+                      <div class="cta-link-hover"></div>
+                      <span class="roof-attr">Metal</span>
+                    </div><!-- .cta-link -->
+                  </div><!-- .cta-circle -->
+                </button>
 
-                    <div class="cta-circle-wrapper">
-                        <button type="submit" id="solar_quote_basic_roof_type_metal" name="roof-type" value="Metal">
-                            <div class="cta-circle">
-                                <div class="cta-link" style="background-image: url('https://www.solar-estimate.org/build/images/calculator/roof_type_metal-cf38744794.jpg')">
-                                    <div class="cta-link-hover"></div>
-                                </div><!-- .cta-link -->
-                            </div><!-- .cta-circle -->
-                            <label for="solar_quote_basic_roof_type_metal">Metal</label>
-                        </button>
-                    </div><!-- .cta-circle-wrapper -->
+              </div><!-- .cta-circle-wrapper -->
 
-                    <div class="cta-circle-wrapper">
-                        <button type="submit" id="solar_quote_basic_roof_type_shingles" name="roof-type" value="Shingles">
-                            <div class="cta-circle">
-                                <div class="cta-link" style="background-image: url('https://www.solar-estimate.org/build/images/calculator/roof_type_shingles-a168c95f25.jpg')">
-                                    <div class="cta-link-hover"></div>
-                                </div><!-- .cta-link -->
-                            </div><!-- .cta-circle -->
-                            <label for="solar_quote_basic_roof_type_shingles">Shingles</label>
-                        </button>
-                    </div><!-- .cta-circle-wrapper -->
+              <div class="cta-circle-wrapper col-md-4 col-sm-3 col-xs-6">
 
-                    <div class="cta-circle-wrapper">
-                        <button type="submit" id="solar_quote_basic_roof_type_concrete_tiles" name="roof-type" value="Concrete Tiles">
-                            <div class="cta-circle">
-                                <div class="cta-link" style="background-image: url('https://www.solar-estimate.org/build/images/calculator/roof_type_concrete_tiles-4cb3b207ab.jpg')">
-                                    <div class="cta-link-hover"></div>
-                                </div><!-- .cta-link -->
-                            </div><!-- .cta-circle -->
-                            <label for="solar_quote_basic_roof_type_concrete_tiles">Concrete tiles</label>
-                        </button>
-                    </div><!-- .cta-circle-wrapper -->
+                <button type="submit" onclick="Cookies.set('roof_type', jQuery(this).val())" id="roof-type-2" class="solar_quote_roof" name="roof_type" value="shingles">
+                  <div class="cta-square">
+                    <div class="cta-link">
+                      <div class="cta-link-hover"></div>
+                      <span class="roof-attr">Shingles</span>
+                    </div><!-- .cta-link -->
+                  </div><!-- .cta-circle -->
+                </button>
 
-                    <div class="cta-circle-wrapper">
-                        <button type="submit" id="solar_quote_basic_roof_type_clay_terracotta" name="roof-type" value="Clay / Terracotta">
-                            <div class="cta-circle">
-                                <div class="cta-link" style="background-image: url('https://www.solar-estimate.org/build/images/calculator/roof_type_clay_terracotta-0f3e540f15.jpg')">
-                                    <div class="cta-link-hover"></div>
-                                </div><!-- .cta-link -->
-                            </div><!-- .cta-circle -->
-                            <label for="solar_quote_basic_roof_type_clay_terracotta">Clay / Terracotta</label>
-                        </button>
-                    </div><!-- .cta-circle-wrapper -->
+              </div><!-- .cta-circle-wrapper -->
 
-                    <div class="cta-circle-wrapper">
-                        <button type="submit" id="solar_quote_basic_roof_type_groundmount" name="roof-type" value="Ground Mount">
-                            <div class="cta-circle">
-                                <div class="cta-link" style="background-image: url('https://www.solar-estimate.org/build/images/calculator/roof_type_groundmount-7603be7f8b.jpg')">
-                                    <div class="cta-link-hover"></div>
-                                </div><!-- .cta-link -->
-                            </div><!-- .cta-circle -->
-                            <label for="solar_quote_basic_roof_type_groundmount">Ground mount</label>
-                        </button>
-                    </div><!-- .cta-circle-wrapper -->
+              <div class="cta-circle-wrapper col-md-4 col-sm-3 col-xs-6">
 
-                    <div class="cta-circle-wrapper">
-                        <button type="submit" id="solar_quote_basic_roof_type_other" name="roof-type" value="Other">
-                            <div class="cta-circle">
-                                <div class="cta-link bg-grey-dark">
-                                    <div class="cta-link-hover"></div>
-                                    <h3>Other</h3>
-                                </div><!-- .cta-link -->
-                            </div><!-- .cta-circle -->
-                            <label for="solar_quote_basic_roof_type_other">Other</label>
-                        </button>
-                    </div><!-- .cta-circle-wrapper -->
+                <button type="submit" onclick="Cookies.set('roof_type', jQuery(this).val())" id="roof-type-3" class="solar_quote_roof" name="roof_type" value="concrete tiles">
+                  <div class="cta-square">
+                    <div class="cta-link">
+                      <div class="cta-link-hover"></div>
+                      <span class="roof-attr">Concrete Tiles</span>
+                    </div><!-- .cta-link -->
+                  </div><!-- .cta-circle -->
+                </button>
 
-                </div>
+              </div><!-- .cta-circle-wrapper -->
 
-                <input type="hidden" name="clickedRoofType" value="">
+              <div class="cta-circle-wrapper col-md-4 col-sm-3 col-xs-6">
 
-                <br><span class="text-danger"></span>
+                <button type="submit" onclick="Cookies.set('roof_type', jQuery(this).val())" id="roof-type-4" class="solar_quote_roof" name="roof_type" value="clay / terracotta">
+                  <div class="cta-square">
+                    <div class="cta-link">
+                      <div class="cta-link-hover"></div>
+                      <span class="roof-attr">Clay / Terracotta</span>
+                    </div><!-- .cta-link -->
+                  </div><!-- .cta-circle -->
+                </button>
 
-            </div>
-        </div>
+              </div><!-- .cta-circle-wrapper -->
 
-    </div>
+              <div class="cta-circle-wrapper col-md-4 col-sm-3 col-xs-6">
 
+                <button type="submit" onclick="Cookies.set('roof_type', jQuery(this).val())" id="roof-type-5" class="solar_quote_roof" name="roof_type" value="ground mount">
+                  <div class="cta-square">
+                    <div class="cta-link">
+                      <div class="cta-link-hover"></div>
+                      <span class="roof-attr">Ground Mount</span>
+                    </div><!-- .cta-link -->
+                  </div><!-- .cta-circle -->
+                </button>
 
-</form>
-</div>
+              </div><!-- .cta-circle-wrapper -->
+
+              <div class="cta-circle-wrapper col-md-4 col-sm-3 col-xs-6">
+
+                <button type="submit" onclick="Cookies.set('roof_type', jQuery(this).val())" id="roof-type-6" class="solar_quote_roof submit-template" name="roof_type" value="other">
+                  <div class="cta-square">
+                    <div class="cta-link">
+                      <div class="cta-link-hover"></div>
+                      <span class="roof-attr">Other</span>
+                    </div><!-- .cta-link -->
+                  </div><!-- .cta-circle -->
+                </button>
+
+              </div><!-- .cta-circle-wrapper -->
+            </div><!-- row -->
+
+          </div><!-- utility buttons -->
+        </div><!-- form-group -->
+
+      </form>
+    </div><!-- col-md-12 -->
+  </div><!-- row -->
+</div><!-- container -->

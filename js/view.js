@@ -1,5 +1,7 @@
 var view = {
+	// cookie expiration time
 	expiration: 1/48,
+
 	stageTracker: function() {
 		if (Cookies.get('stage') === undefined) {
 			Cookies.set('stage', 'mounted')
@@ -22,6 +24,15 @@ var view = {
 				// send user on select map location back to re-enter their address for gmaps
 				this.renderTemplate('findYourRoof')
 				break;
+			case 'roofType': 
+				this.renderTemplate('roofType')
+				break;
+			case 'roofPitch': 
+				this.renderTemplate('roofPitch')
+				break;
+			case 'roofShade': 
+				this.renderTemplate('roofShade')
+				break;
 			case 'yourSystemEstimate': 
 				this.renderTemplate('yourSystemEstimate')
 				break;
@@ -42,6 +53,10 @@ var view = {
 					fn()
 				}
 
+				// to keep track of button state for preventing 
+				// click events from firing more than once
+				$('button').addClass('submit-template')
+
 			})
 
 		})
@@ -59,6 +74,7 @@ var view = {
 
 			$(this).children().remove()
 			// stop render template jax call from firing more than once
+
 			if (!$submit.data('pressed')) {
 
 				$this.renderTemplate(nextTemp, fn)
