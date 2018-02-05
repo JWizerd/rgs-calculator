@@ -35,6 +35,7 @@ var view = {
 				break;
 			case 'yourSystemEstimate': 
 				this.renderTemplate('yourSystemEstimate')
+				system.render()
 				break;
 		}
 	},
