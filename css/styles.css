@@ -1,5 +1,13 @@
 /* General */
 
+.bottom {
+	margin-bottom: 0 !important;
+}
+
+.bottom5 {
+	margin-bottom: 5px !important;
+}
+
 .solar-quote-basic {
 	margin-top: 30px;
 }
@@ -256,6 +264,34 @@ input[type=range]:focus,
 		url(../img/shade_severe.jpg);
 }
 
+/* system estimate */
+
+#roof-image, #solar-calc-results {
+	min-height: 450px;
+}
+
+#solar-results .col-sm-6{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+#solar-calc-results {
+	color: #333;
+	text-align: left;
+	padding: 40px;
+	background: rgba(0, 0, 0, .5);
+}
+
+#solar-calc-results h5 {
+	font-size: 22px;
+	margin-bottom: 20px;
+	color: #ffcf4a;
+}
+
+#solar-calc-results small {
+	color: #fff;
+}
+
 /* media */
 
 @media (min-width: 992px) {
@@ -265,3 +301,4 @@ input[type=range]:focus,
 		align-items: center;
 	}
 }
+

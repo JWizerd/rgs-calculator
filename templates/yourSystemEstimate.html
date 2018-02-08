@@ -1,43 +1,48 @@
-<div class="col-md-12">
-    <h3>Your system estimate</h3>
-    <br class="hidden-xs">
-    <div class="col-md-4 col-sm-4">
-        <table class="table table-bordered">
-            <tbody><tr>
-                <td>
-                    <h4 class="text-center">System <br class="hidden-xs">Size</h4>                    
-                    <h5 id="dc-system-size"></h5>
-                    <p class="small">&nbsp;</p>
-                </td>
-            </tr>
-        </tbody></table>
-    </div>
-    <div class="col-md-4 col-sm-4">
-        <table class="table table-bordered">
-            <tbody><tr>
-                <td>
-                    <h4 class="text-center">Annual Production</h4>
-                    <h5 class="text-center txt-info" id="annual-usage"></h5>
-                    <p class="small hidden-xs">&nbsp;</p>
-                </td>
-            </tr>
-        </tbody></table>
-    </div>
-    <div class="col-md-4 col-sm-4">
-        <table class="table table-bordered">
-            <tbody><tr>
-                <td>
-                    <h4 class="text-center">Cost (After 30% Federal Tax Credit)</h4>
-                    <h5 class="text-center" id="cost"></h5>
-                </td>
-            </tr>
-        </tbody></table>
-    </div>
+<div class="container" id="solar-results">
+    <div class="row">
 
-    <form id="solar_quote_basic_1" class="txt-center solar-quote-basic" action="">
-        <div class="form-group">
-            <button type="submit" class="btn btn-primary btn-lg">Schedule a Live Estimate <i class="glyphicon glyphicon-chevron-right"></i></button>
-        </div>
-    </form>
+        <h3>Your system estimate</h3>
+        <p class="calc-divider"></p>
+        <p>Based from your input here is what you can expect to pay and save for a solar system</p>
 
+        <div class="col-sm-6" id="roof-image"></div>
+
+        <div class="col-sm-6">
+
+            <div id="solar-calc-results">
+
+                <div class="calc-result">
+                    <h5>System Size: <span id="dc-system-size"></span></h5>
+                </div>   
+
+                <div class="calc-result">
+                    <h5>Cost: <span id="cost"></span> <small>(After 30% Federal Tax Credit)</small></h5>
+                </div> 
+
+                <div class="calc-result">
+                    <h5>Monthly Savings: <span id="monthly-savings"></span></h5>
+                </div> 
+
+                <div class="calc-result">
+                    <h5>Annual Savings: <span id="annual-savings"></span></h5>
+                </div>   
+
+                <div class="calc-result">
+                    <h5 class="bottom5">Payback Period: <span id="payback-period"></span></h5>
+                    <small>*This means if you re-direct your monthly utility bill you will pay off the system in year <span id="payback-year"></span></small>
+                </div>
+
+                <div>
+                    <form id="solar_quote_basic_1" class="txt-center solar-quote-basic" action="">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-lg">Schedule a Live Estimate <i class="glyphicon glyphicon-chevron-right"></i></button>
+                        </div>
+                    </form>
+                </div>
+
+            </div><!-- solar calc results -->
+
+        </div><!-- col sm 6 -->
+        
+    </div>
 </div>
