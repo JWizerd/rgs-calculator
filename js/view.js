@@ -96,7 +96,7 @@ var view = {
 		      lat: position.coords.latitude,
 		      lng: position.coords.longitude
 		    };
-		    var bgMap = 'https://maps.googleapis.com/maps/api/staticmap?format=jpg&scale=2&size=640x350&key=AIzaSyAUKq3IavSkzBPuJMHVTiEpyUo_m8PwHaM&center='+ geolocation.lat + ',' + geolocation.lng + '&style=element%3Alabels%7Clightness%3A50&maptype=satellite&zoom=13';
+		    var bgMap = 'https://maps.googleapis.com/maps/api/staticmap?format=jpg&scale=2&size=640x350&key=API_KEY_HERE&center='+ geolocation.lat + ',' + geolocation.lng + '&style=element%3Alabels%7Clightness%3A50&maptype=satellite&zoom=13';
 		  $('#mad-solar-calc').css(
 			  {
 			  	'background': 'linear-gradient(rgba(1, 35, 70,.8), rgba(1, 35, 70,.8)), url(' + bgMap + ')'
