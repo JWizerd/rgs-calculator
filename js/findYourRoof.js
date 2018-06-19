@@ -84,7 +84,7 @@ var Roof = {
   },
 
 	generateMap: function(address){
-		$.get('https://maps.googleapis.com/maps/api/geocode/json?address='+ encodeURI(address) +'&key=AIzaSyAqFcYk1TD4uNYR4LjF1jRoRu1Pqr0npdA', function(data){
+		$.get('https://maps.googleapis.com/maps/api/geocode/json?address='+ encodeURI(address) +'&key=API_KEY_HERE', function(data){
 			console.log('Google Geolocator API Call successful.')
 		})
     .done(function(data){
